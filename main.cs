@@ -71,7 +71,7 @@ class Program
         }
 
 
-        Console.WriteLine("Pressione qualquer tecla para iniciar a simulação...");
+        Console.WriteLine("Pressione qualquer tecla para iniciar.");
         Console.ReadKey();
 
         HashSet<int> numerosCartela = new HashSet<int>();
@@ -92,13 +92,13 @@ class Program
             Console.WriteLine("Número sorteado: " + numero);
             if (numerosCartela.Contains(numero))
             {
-                Console.WriteLine("Número está na cartela!");
+                Console.WriteLine("Número na cartela!");
                 numerosCartela.Remove(numero);
             }
 
             if (numerosCartela.Count == 0)
             {
-                Console.WriteLine("Parabéns! Você completou a cartela!");
+                Console.WriteLine("Você completou a cartela!");
                 break;
             }
         }
